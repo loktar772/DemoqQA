@@ -46,4 +46,11 @@ def test_visible_default_accordion(browser):
     browser.set_window_size(width=1000, height=1000)
     accordion_vis.refresh()
     assert accordion_vis.accordion_section_1_text.visible()
+
+def test_not_exist(browser):
+    accordion_page = AccordionPage(browser)
+    accordion_page.visit()
+    assert accordion_page.not_elem.exist()
+
+
 # Just empty line

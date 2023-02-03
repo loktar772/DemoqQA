@@ -6,27 +6,27 @@ class BasePage:
 
     # Creating Base methods
     # Creating method for open page
-    def visit(self):
+    def visit(self): #для открытия страницы
         return self.driver.get(self.base_url)
 
     # Creating method to go page back
     def back(self):
-        self.driver.back()
+        self.driver.back() #стрелка назад
 
     # Creating method to go page forward
     def forward(self):
-        self.driver.forward()
+        self.driver.forward() #стрелка вперёд
 
     # Creating method to refresh page
-    def refresh(self):
+    def refresh(self): #обновить
         self.driver.refresh()
 
     # Creating method to get current page url
-    def get_url(self):
+    def get_url(self): #получить адрес текущей страницы
         return self.driver.current_url
 
     # Creating method to get current page title
-    def get_title(self):
+    def get_title(self): # получить заголовок страницы
         return self.driver.title
 
     # Creating method to get current page title

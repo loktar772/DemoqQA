@@ -10,5 +10,6 @@ class AccordionPage(BasePage):
 
         self.accordion_section_1_heading = WebElement(driver, '#section1Heading')
         self.accordion_section_1_text = WebElement(driver, '#section1Content > p')
+        self.not_elem = WebElement(driver, 'p>p')
 
-# Just empty line
+

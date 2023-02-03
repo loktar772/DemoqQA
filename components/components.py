@@ -17,6 +17,10 @@ class WebElement:
     def click_elem(self):
         self.find_element().click()
 
+    def click_force(self):
+        self.driver.execute_script("arguments[0].click();", self.find_element())
+
+
     # Creating method for finding elements by CSS Selector
     def find_element(self):
         time.sleep(3)
@@ -53,4 +57,11 @@ class WebElement:
         if len(self.find_elements()) == count:
             return True
         return False
-# Just empty line
+
+    def send_keys(self, text: str):
+        self.find_element().send_keys(text) #метод ввода текста
+
+
+
+
+

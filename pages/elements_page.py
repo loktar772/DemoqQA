@@ -13,6 +13,7 @@ class ElementsPage(BasePage):
         self.side_bar_first_textbox = WebElement(driver, '.menu-list > li#item-0')
         self.side_bar_first_checkbox = WebElement(driver, '.menu-list > li#item-1')
         self.btns_first_menu = WebElement(driver, 'div:nth-child(1) > div > ul > li')
+
         super().__init__(driver, self.base_url)
 
 # Just empty line
